@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation | Welcome</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+    <script src = "stopwatch.js"> </script>
+  </head>
+  <body onload="show();">
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#">Cricket</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+    </nav>
+    <ul class="button-group">
+        <div class="row">
+            <div class="large-6 columns">
+                <br>
+                <li><a href="#" class="button expand" value="start" onclick="start();">Start</a></li>
+            </div>
+            <div class="large-6 columns">
+                <br>
+                <li><a href="#" class="button expand" value="reset" onclick="reset();">End</a></li>
+            </div>
+        </div>
+    </ul>
+    <div class="row">
+          <div class="large-6 medium-6 columns">
+            <div class="callout panel">
+              <h1><span id="time"></span></h1>
+            </div>
+          </div>
+          <div class="large-6 medium-6 columns">
+            <div class="callout panel">
+              <h1>Counter</h1>
+            </div>
+          </div>
+    </div>
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

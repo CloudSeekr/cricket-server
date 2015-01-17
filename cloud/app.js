@@ -15,7 +15,11 @@ app.get('/hello', function(req, res) {
 });
 
 app.get('/stats', function(req, res) {
-  res.render('hello', { message: 'Congrats, you just set up your stats!' });
+  res.render('stats', { numA: '123', numB: '12', numC: '32', numD: '40', numE: '7', numVotes: '203'});
+});
+
+app.get('/prof', function(req, res) {
+  res.render('professor');
 });
 
 // // Example reading from the request query string of an HTTP get request.

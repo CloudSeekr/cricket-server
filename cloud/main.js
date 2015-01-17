@@ -9,3 +9,7 @@ Parse.Cloud.define("hello", function(request, response) {
 Parse.Cloud.define("stats", function(request, response) {
   response.success("Stats called!");
 });
+
+Parse.Cloud.define("prof", function(request, response) {
+  response.success("Prof launched!");
+});
