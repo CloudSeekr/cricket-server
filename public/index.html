@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.3.3.min.js"></script>
+        <script type="text/javascript">
+                
+            Parse.initialize("pcIrpsQVAd6lXiI5lIJ9zlS4j0s4G46oIgfstGY6", "yt7ZJ3GRSaroypAHN7sJtPDKV1cDZpq1ip3wubeQ");
+            
+            
+            
+            //MAKING A NEW USER------------
+            //Creating new User subclass and gives it some required values. email is optional
+            var user = new Parse.User();
+            user.set("username", "my name");
+            user.set("password", "my pass");
+            user.set("email", "my@email.com");
+            
+            //then we use the signUp method 
+            user.signUp(null, {
+                success: function(user) {
+                    //code that lets user use app
+                },
+                error: function(user, error) {
+                    alert("Error: " + error.code + " " + error.message);
+                }
+            });
+            
+            
+            //LOGGING A USER IN--------------
+            //We use the logIn method of the user class
+            Parse.User.logIn("myname", "mypass", {
+                success: function(user) {
+                    //Code for what to do after user logs in
+                },
+                error: function 
+            
+            
+            //New subclass of Parse.Object called 
+            var Student = Parse.Object.extend("Student");
+            var student = new Student();
+            
+            )
+            
+            function PushA() {             
+                student.save({ value: "A" }).then(
+                function(student) {
+                    document.getElementById(buttonA).style.backgroundColor = '#00FF00';
+                },
+                function(error) {
+                    alert("Error");
+                }
+            ) };
+            function PushB() { "students": { "uniqname1": { "value": "B" } } };
+            function PushC() { "students": { "uniqname1": { "value": "C" } } };
+            function PushD() { "students": { "uniqname1": { "value": "D" } } };
+            function PushE() { "students": { "uniqname1": { "value": "E" } } };
+        </script>
+    </head>
+    <body>
+        <button id="buttonA" type="button" onclick="PushA()">A</button>
+        <button id="buttonB" type="button" onclick="PushB()">B</button>
+        <button id="buttonC" type="button" onclick="PushC()">C</button>
+        <button id="buttonD" type="button" onclick="PushD()">D</button>
+        <button id="buttonE" type="button" onclick="PushE()">E</button>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "Cricket": {
+            "applicationId": "ac93dAfZKKtsfjJhE56rbtWA6KorffbtqoUUPOvd", 
+            "masterKey": "vxy6bHVN6OhHlnv5ykgP3DH681tVrMpjkbUGwk5i"
+        }, 
+        "_default": {
+            "link": "Cricket"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.3.3"
+    }
+}
